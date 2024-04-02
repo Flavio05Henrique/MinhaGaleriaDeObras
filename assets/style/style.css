@@ -60,7 +60,7 @@ header h1 span {
   width: 50px;
   height: 50px;
   padding: 0px 6px;
-  background: url(MinhaGaleriaDeObras/assets/img/minhaGaleriaDeObrasLogo.svg) no-repeat center center;
+  background: url(/MinhaGaleriaDeObras/assets/img/minhaGaleriaDeObrasLogo.svg) no-repeat center center;
   background-size: cover;
   font-size: 5rem;
 }
@@ -146,11 +146,11 @@ header img {
   color: black;
 }
 .search__container .search__filterBnt {
-  background: transparent url(MinhaGaleriaDeObras/assets/img/filter-solid.svg) no-repeat center center;
+  background: transparent url(/MinhaGaleriaDeObras/assets/img/filter-solid.svg) no-repeat center center;
   background-size: 30px;
 }
 .search__container .createNewCardBnt {
-  background: transparent url(MinhaGaleriaDeObras/assets/img/plus-solid.svg) no-repeat center center;
+  background: transparent url(/MinhaGaleriaDeObras/assets/img/plus-solid.svg) no-repeat center center;
   background-size: 30px;
 }
 
@@ -341,13 +341,13 @@ header img {
   border-radius: 5px;
 }
 .cardExtended__container .cardExtended__confirmBnts .confirm {
-  background: transparent url(MinhaGaleriaDeObras/assets/img/square-check-regular.svg) no-repeat center center;
+  background: transparent url(/MinhaGaleriaDeObras/assets/img/square-check-regular.svg) no-repeat center center;
 }
 .cardExtended__container .cardExtended__confirmBnts .confirm:hover {
   background-color: var(--cor_9);
 }
 .cardExtended__container .cardExtended__confirmBnts .cancel {
-  background: transparent url(MinhaGaleriaDeObras/assets/img/ban-solid.svg) no-repeat center center;
+  background: transparent url(/MinhaGaleriaDeObras/assets/img/ban-solid.svg) no-repeat center center;
   background-size: 45px;
 }
 .cardExtended__container .cardExtended__confirmBnts .cancel:hover {
