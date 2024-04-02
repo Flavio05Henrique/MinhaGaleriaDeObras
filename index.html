@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinhaGaleriaDeObras</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/minhaGaleriaDeObrasLogo.svg">
+</head>
+<body>
+    <header>
+        <h1><span></span>inhaGaleriaDeObras</h1>
+        <div class="saveYourList__container">
+            <h2 class="saveYourList__title">Salve ou carregue o arquivo com suas obras</h2>
+            <button class="saveYourList__bnt" data="saveYourList__save">Salvar</button>
+            <button class="saveYourList__bnt" data="saveYourList__load">Carregar</button>
+        </div>
+        <img src="assets/img/headerBG.svg" alt="background do header">
+    </header>
+    <main>
+        <div class="search__container">
+            <button class="seach__reset search__bnt" title="reset" data="seach__reset">X</button>
+            <form data="formSearchName">
+                <input type="text" id="search" data="inputSearchName" required>
+                <label for="search">Busque pelo nome</label>
+            </form>
+            <button class="search__filterBnt search__bnt" data="seachFilter"></button>
+            <button class="createNewCardBnt search__bnt" data="openCreateNewCardBnt" title="new"></button>
+        </div>
+
+        <div class="cards__container" data="cards__container">
+        </div>
+        <div class="popUpContainer display__none" data="popUpContainer">
+                <button data="popUpContainer__bntClose">X</button>
+                <div class="cardExtended__container" data="cardExtended__CreateNewCard">
+                    <div class="cardExtended__img">
+                        <div class="cardExtended__choseImg cardExtended__input">
+                            <label>Insira o link da imagem</label>
+                            <input type="text" maxlength="300" data="inputChoseImg">
+                        </div>
+                    </div>
+                    <div class="cardExtended__info">
+                        <input type="color" class="cardExtended__changeColor" data="inputChoseCardColor" value="#012030">
+                        <button class="cardExtended__bntDelete cardExtended__centralize" data="createNewCardBnt">Criar</button>
+                        <span class="cardExtended__title cardExtended__centralize cardExtended__input"><h3>Nome da obra</h3> <input type="text" maxlength="100" data="inputChoseName"></span>
+                        <div class="cardExtended__bntActive cardExtended__centralize" data="activeCardBnt">
+                            Obra ativa
+                            <button><div></div></button>
+                        </div>
+                        <span class="cardExtended__season cardExtended__centralize cardExtended__input"><h3>Temporada/Volume :</h3><input type="number" data="inputChoseSeason"></span>
+                        <span class="cardExtended__chapter cardExtended__centralize cardExtended__input"><h3>Ultimo capitulo visto :</h3> <input type="number" data="inputChoseChapter"></span>
+                        <span class="cardExtended__assessment cardExtended__centralize cardExtended__input">
+                            <h3>Sua nota : </h3>
+                            <select data="inputChoseAssessment">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </span>
+                        <span class="cardExtended__tag cardExtended__centralize cardExtended__input">
+                            <h3>Gênero : </h3>
+                            <select data="inputChoseTag">
+                                <option value="Fantasia">Fantasia</option>
+                                <option value="Ficção científica">Ficção científica</option>
+                                <option value="Distopia">Distipia</option>
+                                <option value="Ação">Ação</option>
+                                <option value="Aventura">Aventura</option>
+                                <option value="Horror">Horror</option>
+                                <option value="Suspense">Suspense</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Humor">Humor</option>
+                            </select>
+                        </span>
+                        <span class="cardExtended__type cardExtended__centralize cardExtended__input">
+                            <h3>Tipo : </h3>
+                            <select data="inputChoseType">
+                                <option value="Anime">Anime</option>
+                                <option value="Serie">Serie</option>
+                                <option value="Mangá">Mangá</option>
+                                <option value="Graphic Novel">Graphic Novel</option>
+                                <option value="Livro">Livro</option>
+                            </select>
+                        </span>
+                        <span class="cardExtended__comments">
+                            <h3><h3>Comentarios</h3></h3>
+                            <textarea name="" id="" cols="30" rows="10" data="cardComments">...</textarea>
+                        </span>
+                        <span class="cardExtended__link cardExtended__centralize cardExtended__input">
+                            <h3>Coloque aqui o link onde você acompanha a obra :</h3> 
+                            <input type="text" maxlength="1000" data="inputChoseLink">
+                        </span>
+                    </div>
+            </div>
+        </div>
+        <div class="popUpContainer display__none" data="popUpContainerDynamic">
+            <button data="popUpContainerDynamic__bntClose">X</button>
+            <div data="popUpContainerDynamicConatiner">
+                <div class="cardExtended__container">
+                    <img src="https://cdn.kobo.com/book-images/2c51ebd3-5134-41fc-8a1d-1bc83610fd55/1200/1200/False/solo-leveling-vol-3-comic.jpg" alt="">
+                    <div class="cardExtended__info">
+                        <input type="color" class="cardExtended__changeColor">
+                        <button class="cardExtended__bntDelete cardExtended__centralize">DELETAR</button>
+                        <span class="cardExtended__title cardExtended__centralize">Nome da obra <div>Solo leving</div></span>
+                        <div class="cardExtended__bntActive cardExtended__centralize">
+                            Obra ativa
+                            <button></button>
+                        </div>
+                        <span class="cardExtended__season cardExtended__centralize">Temporada/Volume <div>1</div></span>
+                        <span class="cardExtended__chapter cardExtended__centralize">Ultimo capitulo visto : <div>100</div></span>
+                        <span class="cardExtended__assessment cardExtended__centralize">Sua nota: <div>10</div></span>
+                        <span class="cardExtended__tag cardExtended__centralize">Gênero: <div>Ficção Contemporânea</div></span>
+                        <span class="cardExtended__comments">
+                            <h3>Comentarios</h3>
+                            <textarea name="" id="" cols="30" rows="10">aaaaaaaaaaaa</textarea>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showMessage__container" data="showMessage__container">
+        </div>
+    </main>
+    <script src="src/js/showMessageClient.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/seach.js"></script>
+    <script src="src/js/saveMyList.js"></script>
+</body>
+</html>
